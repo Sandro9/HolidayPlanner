@@ -1,7 +1,8 @@
 # Holiday planing Tool - under development
 
 Keep Track of your Holidays with the Holiday Planner, your go-to tool for efficient holiday management.
-<img width="1107" alt="Bildschirm­foto 2023-11-05 um 19 11 55" src="https://github.com/Sandro9/Urlaubsplaner/assets/78750208/88fb8e06-4123-46fc-8502-092c28bfd615">
+<img width="1107" alt="Bildschirm­foto 2023-11-05 um 19 11 55" src="https://github.com/Sandro9/Urlaubsplaner/assets/78750208/f7d91f23-f948-42cc-a68e-c3804f2ceae4">
+
 
 ## IMPORTANT
 please note that this tool is in a very early stage and is still under development and some bugs may occour. Its functionality is not in a stable state.
