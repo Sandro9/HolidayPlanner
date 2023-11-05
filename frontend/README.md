@@ -1,27 +1,42 @@
-# Frontend
+# Holiday planing Tool - under development
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.4.
+Keep Track of your Holidays with the Holiday Planner, your go-to tool for efficient holiday management.
 
-## Development server
+## IMPORTANT
+please note that this tool is still under development and some bugs may occour. Its functionality is not in a stable state.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Features
 
-## Code scaffolding
+User-Friendly Interface: Easily navigate through the application and manage your holidays hassle-free.
+Interactive Calendar: View and plan your holidays using the interactive calendar interface.
+Flexible Scheduling: Plan your holidays for specific dates or duration, accommodating your diverse needs.
+Real-time Updates: Stay up-to-date with real-time updates on your holiday requests and approvals.
+Reminder Notifications: Receive timely reminders to help you never miss an important holiday.
+Getting Started
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Follow these simple steps to start using the Holiday Planner:
 
-## Build
+Clone the Repository:
+```bash
+git clone <repository-url>
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+go into frontend directory
+```bash
+cd holiday-planner/frontend
+```
 
-## Running unit tests
+Install Dependencies:
+```bash
+npm install
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+run 
+```bash
+npm run start
+```
 
-## Running end-to-end tests
+Open in your Browser:
+Visit http://localhost:4200 in your browser to access the Holiday Planner.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Currently there is no real functionality yet - only a calendar preview
