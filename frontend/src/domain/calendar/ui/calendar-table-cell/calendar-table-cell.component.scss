@@ -1,0 +1,8 @@
+:host {
+  display: block;
+  width: 100%;
+  min-height: 100px;
+  border-collapse: collapse;
+  border: 1px solid rgb(203 213 225);
+  grid-column: span 1 / span 1;
+}

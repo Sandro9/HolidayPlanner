@@ -1,1 +1,24 @@
-hallo sig
+<form [formGroup]="form">
+    <select formControlName="year">
+        <option [value]="2023">2023</option>
+        <option [value]="2024">2024</option>
+    </select>
+    <select formControlName="month">
+        <option *ngFor="let monthName of monthNames;index as i" [value]="i">{{monthName}}</option>
+    </select>
+</form>
+<app-calendar-table #calendarTable>
+    <app-calendar-head-cell>Monday</app-calendar-head-cell>
+    <app-calendar-head-cell>Tuesday</app-calendar-head-cell>
+    <app-calendar-head-cell>Wednessday</app-calendar-head-cell>
+    <app-calendar-head-cell>Thuersday</app-calendar-head-cell>
+    <app-calendar-head-cell>Friday</app-calendar-head-cell>
+    <app-calendar-head-cell>Saturday</app-calendar-head-cell>
+    <app-calendar-head-cell>Sunday</app-calendar-head-cell>
+    <app-calendar-table-cell 
+        *ngFor="let cell of calendarCells()"
+        (onClick)="onCallendarCellClick(cell)"
+    >
+        {{cell.dayNumber}}
+    </app-calendar-table-cell>
+</app-calendar-table>

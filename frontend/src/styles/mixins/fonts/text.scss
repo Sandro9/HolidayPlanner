@@ -1,0 +1,36 @@
+@use 'colors' as color;
+@use "sass:map";
+
+@function getFontSize($size) {
+    $sizes: (
+        "12" : 12px,
+        "14" : 14px,
+        "16" : 16px,
+        "18" : 18px,
+        '22' : 22px,
+        '33' : 33px,
+        '44' : 44px,
+        '55' : 55px,
+        '66' : 66px,
+        '88' : 88px
+    );
+    @return map.get($sizes, $size);
+}
+
+@mixin title($size: '14', $fontWeight: normal) {
+    color: color.$text-color;
+    font-size: getFontSize($size);
+    font-family: 'chivo';
+}
+
+@mixin subText($size: '14', $fontWeight: normal) {
+    color: color.$light-dark-color;
+    font-size: getFontSize($size);
+    font-family: "raleway","Open Sans",sans-serif;
+}
+
+@mixin text($size: '14', $fontWeight: normal) {
+    color: color.$text-color;
+    font-size: getFontSize($size);
+    font-family: "raleway","Open Sans",sans-serif;
+}

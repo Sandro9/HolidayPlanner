@@ -1,0 +1,37 @@
+@mixin slideInLeft($delay: 0s) {
+    display: block;
+    -webkit-animation-name: slideInLeft;
+    animation-name: slideInLeft;
+    -webkit-animation-duration: 1s;
+    animation-duration:1s;
+    animation-delay: $delay;
+    opacity: 1 !important;
+    animation-fill-mode: both;
+}
+
+
+@-webkit-keyframes slideInLeft {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+
+    }
+}
+
+@keyframes slideInLeft {
+
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}

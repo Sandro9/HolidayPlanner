@@ -1,0 +1,19 @@
+@use 'colors' as color;
+
+@mixin lightDarkButton($width: 45px, $height: 45px, $radius: 10px) {
+    padding:7px;
+    border:none;
+    width: $width;
+    height: $height;
+    border-radius: $radius;
+    background-color: color.$light-dark-color;
+    color: color.$text-color;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        opacity: 0.8;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,9 @@
+:host {
+  display: block;
+  max-width: 100%;
+}
+
+.table-content{
+  grid-template-columns: repeat(auto-fill, minmax(14.2857%, 1fr));
+  grid-gap: 0px;
+}
