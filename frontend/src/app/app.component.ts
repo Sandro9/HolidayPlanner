@@ -10,6 +10,8 @@ import { ModalComponent } from 'src/domain/modal/ui/modal/modal.component';
 import { take } from 'rxjs';
 import { EventDialogComponent } from 'src/domain/calendar/feature/event-dialog/event-dialog.component';
 import { ModalInjectorService } from 'src/domain/modal/services/modal-injector.service';
+import { CallendarEventComponent } from '../domain/calendar/ui/callendar-event/callendar-event.component';
+import { ColorTheme } from 'src/domain/color/domain/models/color-theme.model';
 
 @Component({
   selector: 'app-root',
@@ -23,7 +25,8 @@ import { ModalInjectorService } from 'src/domain/modal/services/modal-injector.s
     ReactiveFormsModule,
     NgFor,
     ModalComponent,
-    EventDialogComponent
+    EventDialogComponent,
+    CallendarEventComponent
   ],
   // changeDetection: ChangeDetectionStrategy.OnPush
 })
@@ -41,6 +44,18 @@ export class AppComponent implements OnInit {
 
   public monthNames = this.calendarService.getMonthNameArray();
   public calendarCells: WritableSignal<CallendarCell[]> = signal([]);
+
+  public readonly colorThemes: ColorTheme[] = [{
+    primaryColor: 'rgb(15 118 110)',
+    secondaryColor: '#34d399'
+  }, {
+    primaryColor: '#f87171',
+    secondaryColor: '#fee2e2'
+  }, {
+    primaryColor: '#0ea5e9',
+    secondaryColor: '#bae6fd'
+  }]
+
 
   private ref: ViewContainerRef = inject(ViewContainerRef);
   

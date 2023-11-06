@@ -1,0 +1,19 @@
+:host {
+  @apply bg-teal-200 text-teal-700 rounded;
+  position: absolute;
+  display: block;
+  z-index: 2;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .label {
+    position: absolute;
+    display: block;
+    top:0;
+    left:0;
+    width: 7px;
+    height:100%;
+  }
+}
